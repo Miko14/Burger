@@ -12,7 +12,7 @@ export class BurgerComponent implements OnInit {
   private cheese: boolean = false;
   private meat: boolean = false;
 
-  private ingrediences: Ingredience[] = <Ingredience[]>[];
+  public ingrediences: Ingredience[] = <Ingredience[]>[];
 
   constructor() { }
 
