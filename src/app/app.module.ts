@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { BurgerComponent } from './burger/burger.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BurgerComponent
   ],
   imports: [
     BrowserModule

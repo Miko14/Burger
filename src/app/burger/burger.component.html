@@ -1,0 +1,40 @@
+<div class="wrapper">
+  <div class="left">
+    <label>
+      <input type="checkbox" (change)="changeState('salad')">Salad<br>
+    </label>
+    <div class="mini-box right">
+      <div class="salad pos"></div>
+    </div>
+    <label>
+      <input type="checkbox" name="Bacon" (change)="changeState('bacon')">Bacon<br>
+    </label>
+    <div class="mini-box right">
+      <div class="bacon pos2"></div>
+    </div>
+    <label>
+      <input type="checkbox" name="Cheese" (change)="changeState('cheese')">Cheese<br>
+    </label>
+    <div class="mini-box right">
+      <div class="cheese pos3"></div>
+    </div>
+    <label>
+      <input type="checkbox" name="Meat" (change)="changeState('meat')">Meat<br>
+    </label>
+    <div class="mini-box right">
+      <div class="meat pos4"></div>
+    </div>
+  </div>
+  <div class="right">
+    <div class="box">
+      <div class="bread-top">
+        <div class="seeds"></div>
+        <div class="seeds2"></div>
+      </div>
+      <div *ngFor="let ingredience of ingrediences" class={{ingredience.name}}></div>
+      <div class="bread-bottom"></div>
+    </div>
+  </div>
+</div>
+
+    
